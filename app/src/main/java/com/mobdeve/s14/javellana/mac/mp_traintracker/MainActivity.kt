@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
     private var stations: List<Station> = StationsData.allStations
 
     private val firebaseService = FirebaseService()
-    private val trainSimulator = TrainSimulator()
+    //private val trainSimulator = TrainSimulator()
     private val trainMarkers = mutableMapOf<String, Marker>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         setupClickListeners()
 
         // Start train simulation and observe updates
-        trainSimulator.startSimulation()
+        //trainSimulator.startSimulation()
         observeTrainUpdates()
     }
 
